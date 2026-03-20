@@ -9,21 +9,20 @@
         "ALPACA_PAPER_TRADE": "true"
       }
     },
+    "strategy-engine": {
+      "command": "python",
+      "args": ["servers/strategy_engine.py"],
+      "cwd": "<项目路径>/openhanako-auto-trader"
+    },
     "risk-guard": {
       "command": "python",
-      "args": ["servers/risk_guard_server.py"],
-      "cwd": "<项目路径>/oulay-trader"
+      "args": ["servers/risk_guard.py"],
+      "cwd": "<项目路径>/openhanako-auto-trader"
     },
-    "strategy-analyzer": {
+    "auto-scheduler": {
       "command": "python",
-      "args": ["servers/strategy_server.py"],
-      "cwd": "<项目路径>/oulay-trader"
-    },
-    "scheduler": {
-      "command": "python",
-      "args": ["servers/scheduler_server.py"],
-      "cwd": "<项目路径>/oulay-trader"
+      "args": ["servers/auto_scheduler.py"],
+      "cwd": "<项目路径>/openhanako-auto-trader"
     }
-  },
-  "imports": []
+  }
 }
