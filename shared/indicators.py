@@ -31,7 +31,10 @@ def macd(c, fast=12, slow=26, sig=9):
     vm=[v for v in ml if v is not None]; sl=ema(vm,sig)
     res_m=ml[:]; res_s=[None]*len(ml); res_h=[None]*len(ml); off=len(ml)-len(sl)
     for i,sv in enumerate(sl):
-        res_s[off+i]=sv; res_h[off+i]=(res_m[off+i]-sv) if res_m[off+i] else None
+        m_val = res_m[off+i]
+        res_s[off+i]=sv
+        if m_val is not None and sv is not None:
+            res_h[off+i]=m_val-sv
     return {"macd":res_m,"signal":res_s,"histogram":res_h}
 def bollinger(c, p=20, ns=2.0):
     m=sma(c,p); u=[]; lo=[]
