@@ -44,7 +44,7 @@ openhanako-auto-trader/
 
 ### 前置条件
 - Python 3.10+
-- [Alpaca 账户](https://app.alpaca.markets)（免费注册）
+- [Alpaca 账户](https://app.alpaca.markets)（免费注册）国内也可以用，直接上传身份信息就可以
 - OpenHanako 已安装并运行
 - uv 包管理器（安装 Alpaca 官方 MCP 用）
 
