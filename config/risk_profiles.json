@@ -1,0 +1,6 @@
+{
+  "conservative": {"name":"保守模式","max_single_order_pct":5,"max_single_position_pct":15,"max_total_position_pct":50,"stop_loss_pct":3,"max_daily_loss_pct":2,"allow_short":false,"max_leverage":1.0},
+  "moderate": {"name":"达瓦斯模式","max_single_order_pct":15,"max_single_position_pct":25,"max_total_position_pct":70,"stop_loss_pct":5,"max_daily_loss_pct":5,"allow_short":false,"max_leverage":1.0},
+  "aggressive": {"name":"利弗莫尔模式","max_single_order_pct":30,"max_single_position_pct":50,"max_total_position_pct":80,"stop_loss_pct":8,"max_daily_loss_pct":10,"allow_short":true,"max_leverage":2.0},
+  "tournament": {"name":"比赛模式","max_single_order_pct":80,"max_single_position_pct":100,"max_total_position_pct":100,"stop_loss_pct":15,"max_daily_loss_pct":50,"allow_short":true,"max_leverage":4.0}
+}
