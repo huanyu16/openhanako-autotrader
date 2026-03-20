@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "alpaca-trade": {
+      "command": "uvx",
+      "args": ["alpaca-mcp-server", "serve"],
+      "env": {
+        "ALPACA_API_KEY": "<你的API_KEY>",
+        "ALPACA_SECRET_KEY": "<你的SECRET_KEY>",
+        "ALPACA_PAPER_TRADE": "true"
+      }
+    },
+    "risk-guard": {
+      "command": "python",
+      "args": ["servers/risk_guard_server.py"],
+      "cwd": "<项目路径>/oulay-trader"
+    },
+    "strategy-analyzer": {
+      "command": "python",
+      "args": ["servers/strategy_server.py"],
+      "cwd": "<项目路径>/oulay-trader"
+    },
+    "scheduler": {
+      "command": "python",
+      "args": ["servers/scheduler_server.py"],
+      "cwd": "<项目路径>/oulay-trader"
+    }
+  },
+  "imports": []
+}
